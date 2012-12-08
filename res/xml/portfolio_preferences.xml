@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <CheckBoxPreference android:key="mobile_data"
+        android:title="Enable Mobile Data"
+        android:summaryOn="WARNING: Mobile data will be used for updates"
+        android:summaryOff="Only wifi will be used" />
+    
+    <CheckBoxPreference android:key="automatic_update"
+        android:title="Automatically update Navs"
+        android:summaryOn="Update the Navs on a periodic basis"
+        android:summaryOff="You'll have to manually update them" />
+    
+    <com.bhagwad.projects.TimePreference
+        android:layout="?android:attr/preferenceLayoutChild"
+        android:key="time_pick" android:title="Update time everyday"
+        android:dependency="automatic_update"/>
+    
+    
+</PreferenceScreen>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/btn_black_glossy">
+
+    <TextView
+        android:id="@+id/fund_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxWidth="450dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/fund_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fund_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fund_house"
+        android:textStyle="italic"
+        android:textColor="@color/quantity_blue"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/quantity"
+        android:layout_alignBottom="@+id/quantity"
+        android:textStyle="italic"
+        android:textColor="@color/quantity_blue"
+        android:text=" Units"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/quantity"
+        android:text="Nav: Rs."
+        android:textColor="@color/nav_yellow"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+    <TextView
+        android:id="@+id/latest_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:textColor="@color/nav_yellow"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <TextView
+        android:id="@+id/total_fund_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="italic" 
+        android:text="Fund Value"/>
+
+
+</RelativeLayout>

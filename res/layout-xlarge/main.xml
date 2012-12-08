@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background_style">
+
+    <TextView
+        android:id="@+id/net_worth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Net Worth"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#606060"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/updated_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/net_worth"
+        android:paddingBottom="50dp"
+        android:text="Updated On:"
+        android:textColor="#606060"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <fragment
+        android:id="@+id/portfolio_list_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/updated_on"
+        class="com.bhagwad.projects.PortfolioList$PortfolioListFragment" />
+
+</RelativeLayout>

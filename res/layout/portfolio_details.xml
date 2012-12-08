@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/listview_style"
+    	android:paddingBottom="30dp"  >
+
+        <TextView
+            style="@style/mediumFont"
+            android:id="@+id/details_fund_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/smallFont"
+            android:id="@+id/details_fund_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/details_fund_name"/>
+
+        <TextView
+            style="@style/smallFont"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_fund_house"
+            android:paddingTop="10dp"
+            android:text="Nav: Rs."
+            android:textColor="@color/nav_yellow"/>
+
+        <TextView
+            style="@style/smallFont"
+            android:id="@+id/details_fund_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:textColor="@color/nav_yellow"/>
+
+        <TextView
+            style="@style/smallFont"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_fund_nav"
+            android:text="Quantity: "
+            android:textColor="@color/quantity_blue"/>
+
+        <TextView
+            style="@style/smallFont"
+            android:id="@+id/details_fund_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:textColor="@color/quantity_blue"/>
+
+        <RadioGroup
+            android:id="@+id/add_remove_set_funds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/details_fund_quantity"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_background" >
+
+            <RadioButton
+                android:id="@+id/add_units"
+                android:text="@string/add_units"/>
+
+            <RadioButton
+                android:id="@+id/remove_units"
+                android:text="@string/remove_units"/>
+
+            <RadioButton
+                android:id="@+id/set_units"
+                android:text="@string/set_units"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/change_funds_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_remove_set_funds"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/change_funds_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/change_funds_text"
+            android:inputType="numberDecimal"
+            android:visibility="invisible" 
+            android:paddingLeft="15dp"
+            android:background="@drawable/rounded_background_white"
+            android:textColor="@android:color/black">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/change_funds_save"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/change_funds_edit"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_black_glossy"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</ScrollView>

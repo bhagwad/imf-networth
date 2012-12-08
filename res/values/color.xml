@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="light_grey">#C0C0C0</color>
+   <color name="dark_grey">#606060</color>
+   <color name="quantity_blue">#00FFFF</color>
+   <color name="nav_yellow">#FFCC00</color>
+</resources>

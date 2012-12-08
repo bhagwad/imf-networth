@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_style"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Search for funds..."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <AutoCompleteTextView
+            android:id="@+id/type_funds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_background_white" />
+
+        <TextView
+            android:id="@+id/selected_fund_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/type_funds"
+            android:layout_marginTop="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/selected_fund_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/selected_fund_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/selected_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/selected_fund_house"
+            android:textColor="@color/nav_yellow"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/quantity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/selected_nav"
+            android:text="Enter Units"
+            android:textColor="@color/quantity_blue"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/enter_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selected_nav"
+            android:layout_toRightOf="@+id/quantity_text"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_background_white" 
+            android:width="150dp"
+            android:paddingLeft="15dp"/>
+
+    <Button
+            android:id="@+id/save_entry"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/enter_quantity"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/btn_black_glossy"
+            android:textColor="@android:color/white"
+            android:text="Add" />
+    
+
+     
+       <Button
+            android:id="@+id/button_go_home"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/save_entry"
+            android:layout_alignBaseline="@+id/save_entry"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/btn_black_glossy"
+            android:textColor="@android:color/white"
+            android:text="View Portfolio" />
+    
+    </RelativeLayout>
+
+</ScrollView>

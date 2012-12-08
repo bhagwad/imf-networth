@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Indian Mutual Funds Tracker</string>
+    <string name="add_units">Add Units</string>
+    <string name="remove_units">Remove Units</string>
+    <string name="set_units">Set Units</string>
+    <string name="location">Location</string>
+    <string name="cant_read_folder">folder can\'t be read!</string>
+    <string name="nnew">New</string>
+    <string name="select">Select</string>
+    <string name="file_name">File name:</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Save</string>
+    <string name="no_data">No Data</string>
+
+    <color name="gray">#ffff0000</color>
+
+    <string name="err">Error</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/menu_add_portfolio"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Add Portfolio Item" />
+        
+    
+    <item android:id="@+id/menu_update_navs"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="Update Navs" />
+        
+    
+	<item android:id="@+id/menu_preferences"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Settings" />
+	
+	<item android:id="@+id/menu_export"
+        android:icon="@drawable/ic_menu_save"
+        android:title="Backup" />
+	
+	<item android:id="@+id/menu_import"
+        android:icon="@drawable/ic_menu_upload"
+        android:title="Restore" />
+        
+    
+</menu>
