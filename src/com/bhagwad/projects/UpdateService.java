@@ -15,6 +15,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.os.ResultReceiver;
+import android.util.Log;
 
 public class UpdateService extends IntentService {
 	
@@ -23,6 +24,7 @@ public class UpdateService extends IntentService {
 	FundsDb forUpdation = MainApplication.getDatabaseHelper();
 	
 	private static final int MAX_BUFFER_SIZE = 81920;
+	private static final int ESTIMATED_SIZE = 1304712;
 	ResultReceiver progressReceiver;
 	Bundle bundle = new Bundle();
 	
@@ -216,7 +218,7 @@ public class UpdateService extends IntentService {
  		conn.setDoInput(true);
  		// Starts the query
  		conn.connect();
- 		int size = conn.getContentLength();
+ 		int size = ESTIMATED_SIZE;
  		InputStream stream = conn.getInputStream();
  		int downloaded = 0;
  		byte buffer[];
@@ -236,7 +238,7 @@ public class UpdateService extends IntentService {
  		
  		// Check that at least something was downloaded
  		
- 		if (downloaded < size || size < 1000) throw new IOException("Download problem");
+ 		if (downloaded < 1000) throw new IOException("Download problem");
  		
  		return streamBufferString;
  	}
