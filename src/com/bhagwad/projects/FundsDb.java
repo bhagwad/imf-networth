@@ -208,7 +208,7 @@ public class FundsDb {
 		ContentValues initialValues = new ContentValues();
 
 		initialValues.put(KEY_QUANTITY, quantity);
-		return mDb.update(PORTFOLIO_DATABASE_TABLE, initialValues, KEY_FUND_NAME + "='" + fundName + "'", null) > 0;
+		return mDb.update(PORTFOLIO_DATABASE_TABLE, initialValues, KEY_FUND_NAME + "=?", new String[] {fundName}) > 0;
 
 	}
 	
