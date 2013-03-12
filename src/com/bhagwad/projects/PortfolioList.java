@@ -91,6 +91,7 @@ public class PortfolioList extends FragmentActivity implements
 		case R.id.menu_preferences:
 			Intent iPreferences = new Intent(this, PortfolioPreferences.class);
 			startActivity(iPreferences);
+			return true;
 
 		case R.id.menu_export:
 			Intent i = new Intent(this, FileDialog.class);
