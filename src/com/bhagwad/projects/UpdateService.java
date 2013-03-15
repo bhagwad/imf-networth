@@ -177,15 +177,9 @@ public class UpdateService extends IntentService {
   		}
   		
   		sendFinalStatus();
-  		
-  		// Update the net worth widget if this is an auto update. Otherwise it's updated
-  		// from the thread. Kind of retarded, but it works
-  		
-  		if (progressReceiver == null) {
   			
-  			Utilities.updateNetWorthWidget(getApplicationContext());
+  		Utilities.updateNetWorthWidget(getApplicationContext());
   			
-  		}
   			
   	}
 
