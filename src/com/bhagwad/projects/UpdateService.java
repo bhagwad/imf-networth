@@ -28,7 +28,7 @@ public class UpdateService extends IntentService {
 	ResultReceiver progressReceiver;
 	Bundle bundle = new Bundle();
 	
-	public static final String URL = "http://www.amfiindia.com/spages/NAV0.txt";
+	public static final String URL = "http://portal.amfiindia.com/spages/NAV1.txt";
 	public UpdateService() {
 		super("UpdateService");
 	
